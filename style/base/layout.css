@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  grid-template-rows: 1fr 50px;
+  grid-template-areas:
+    'main'
+    'footer';
+  height: 100vh;
+}
+
+.modular-grid {
+  display: grid;
+  grid-column: 1fr;
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/747f0fe142.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside class="sidenav">
+        <div class="sidenav__user">
+          <div class="avatar"></div>
+          <div class="user-name">David Williams</div>
+          <div class="user-title">Art Director</div>
+        </div>
+        <ul class="sidenav__list">
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-table-cells-large"></i
+              ><span>Dashboard</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-regular fa-gem"></i><span>Layouts</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-regular fa-chart-bar"></i><span>Graphs</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-regular fa-envelope"></i><span>Mailbox</span>
+            </div>
+            <span class="badge badge--alert">16/24</span>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-chart-pie"></i><span>Metrics</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-flask"></i><span>Widgets</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-pen-to-square"></i><span>Forms</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-desktop"></i><span>App views</span>
+            </div>
+            <span class="badge badge--success">SPECIAL</span>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-book-open"></i><span>Other pages</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-earth-americas"></i
+              ><span>Miscellaneous</span>
+            </div>
+            <span class="badge badge--calm">NEW</span>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-flask"></i><span>UI elements</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-laptop"></i><span>Grid options</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-table-cells"></i><span>Tables</span>
+            </div>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-cart-shopping"></i><span>E-commerce</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-regular fa-image"></i><span>Gallery</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-sitemap"></i><span>Menu levels</span>
+            </div>
+            <i class="list-caret fa-solid fa-angle-left"></i>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-wand-magic-sparkles"></i
+              ><span>Animations</span>
+            </div>
+            <span class="badge badge--calm">62</span>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <i class="fa-solid fa-star"></i><span>Landing page</span>
+            </div>
+            <span class="badge badge--calm">NEW</span>
+          </li>
+
+          <li class="sidenav__list-item">
+            <div class="sidenav-descriptor">
+              <a id="logout_btn" href="">
+                <i class="fa-solid fa-right-from-bracket"></i
+                ><span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main">
+        <div class="main-overview">
+          <div class="stats-card">
+            <div class="stats-card-header">
+              <p class="card-heading">Income</p>
+              <span class="badge badge--info">Monthly</span>
+            </div>
+            <div class="stats-card-body">
+              <div class="statistic">40886,200</div>
+              <div class="statistic-desc">Total income</div>
+
+              <div class="stats-indicator info">
+                <span>98%</span><i class="fa-solid fa-bolt-lightning info"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-card-header">
+              <p class="card-heading">Orders</p>
+              <span class="badge badge--calm">Annual</span>
+            </div>
+            <div class="stats-card-body">
+              <div class="statistic">275,800</div>
+              <div class="statistic-desc">New orders</div>
+              <div class="stats-indicator calm">
+                <span>20%</span><i class="fa-solid fa-turn-up calm"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-card-header">
+              <p class="card-heading">Visits</p>
+              <span class="badge badge--success">Today</span>
+            </div>
+            <div class="stats-card-body">
+              <div class="statistic">106,120</div>
+              <div class="statistic-desc">New visits</div>
+              <div class="stats-indicator success">
+                <span>44%</span><i class="fa-solid fa-turn-up"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-card-header">
+              <p class="card-heading">User activity</p>
+              <span class="badge badge--danger">Low value</span>
+            </div>
+            <div class="stats-card-body">
+              <div class="statistic">80,600</div>
+              <div class="statistic-desc">In first month</div>
+              <div class="stats-indicator danger">
+                <span>38%</span>
+                <i class="fa-solid fa-turn-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders-overview">
+          <div class="orders-overview-header">
+            <p class="card-heading">Orders</p>
+            <div class="tab-buttons">
+              <button>Today</button>
+              <button>Monthly</button>
+              <button>Annual</button>
+            </div>
+          </div>
+          <div class="orders-overview-body">
+            <div class="orders-graph">
+              <img
+                src="./assets/orders-graph.png"
+                alt="orders graph"
+                class="responsive"
+              />
+            </div>
+
+            <div class="orders-total">
+              <div class="total-item">
+                <div class="item-value">2,346</div>
+                <div class="item-desc">
+                  <p>Total orders in period</p>
+                  <div class="stats-indicator success">
+                    <span>48%</span><i class="fa-solid fa-turn-up"></i>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="total-item">
+                <div class="item-value">2,346</div>
+                <div class="item-desc">
+                  <p>Total orders in period</p>
+                  <div class="stats-indicator success">
+                    <span>60%</span>
+                    <i class="fa-solid fa-turn-down"></i>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="bar"></div>
+                </div>
+              </div>
+              <div class="total-item">
+                <div class="item-value">2,346</div>
+                <div class="item-desc">
+                  <p>Total orders in period</p>
+                  <div class="stats-indicator success">
+                    <span>22%</span
+                    ><i class="fa-solid fa-bolt-lightning info"></i>
+                  </div>
+                </div>
+                <div class="progress">
+                  <div class="bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modular-grid">
+          <div class="project-list">
+            <div class="project-list-header">
+              <div class="card-heading">User project list</div>
+              <div class="card-toolbar">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-wrench"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="project-list-body">
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Status</th>
+                      <th>Date</th>
+                      <th>User</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Pending...</td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>11:20pm</span>
+                        </span>
+                      </td>
+                      <td>Samantha</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>24%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge--alert">Canceled</span></td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>10:40am</span>
+                        </span>
+                      </td>
+                      <td>Monica</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>66%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pending...</td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>01:30pm</span>
+                        </span>
+                      </td>
+                      <td>John</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>54%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pending...</td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>02:20pm</span>
+                        </span>
+                      </td>
+                      <td>Agnes</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>12%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="badge badge--success">Completed</span>
+                      </td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>04:10am</span>
+                        </span>
+                      </td>
+                      <td>Amelia</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>66%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Pending...</td>
+                      <td>
+                        <span class="timestamp">
+                          <i class="fa-regular fa-clock"></i
+                          ><span>12:08am</span>
+                        </span>
+                      </td>
+                      <td>Damian</td>
+                      <td>
+                        <div class="stats-indicator success">
+                          <span>23%</span><i class="fa-solid fa-turn-up"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="todo-list">
+            <div class="todo-list-header">
+              <div class="card-heading">Small todo list</div>
+              <div class="card-toolbar">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-wrench"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="todo-list-body">
+              <ul class="todo-list-container">
+                <li>
+                  <input type="checkbox" id="item1" />
+                  <label for="item1">Buy milk</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="item2" />
+                  <label for="item2">Go to shop and find some products</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="item3" />
+                  <label for="item3">Send documents to Mike</label>
+                  <span class="badge badge--success"
+                    ><i class="fa-regular fa-clock"></i> 1 mins</span
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="item4" />
+                  <label for="item4">Go to the doctor Dr. Smith</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="item5" />
+                  <label for="item5">Plan vacation</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="item6" />
+                  <label for="item6">Create new stuff</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="item7" />
+                  <label for="item7">Call to Anna for dinner</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="transactions">
+            <div class="transactions-header">
+              <div class="card-heading">Transactions worldwide</div>
+              <div class="card-toolbar">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-wrench"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="transactions-body">
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No.</th>
+                      <th>Transaction</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Security doors</td>
+                      <td>16 Jun 2014</td>
+                      <td>
+                        <span class="badge badge--success"> $483.00</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Wardrobes</td>
+                      <td>10 Jun 2014</td>
+                      <td>
+                        <span class="badge badge--success"> $327.00</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Set of tools</td>
+                      <td>12 Jun 2014</td>
+                      <td>
+                        <span class="badge badge--alert"> $125.00</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Panoramic pictures</td>
+                      <td>22 Jun 2013</td>
+                      <td>
+                        <span class="badge badge--success"> $344.00</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Phones</td>
+                      <td>24 Jun 2013</td>
+                      <td>
+                        <span class="badge badge--success"> $235.00</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Monitors</td>
+                      <td>26 Jun 2013</td>
+                      <td>
+                        <span class="badge badge--success"> $100.00</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="map-container">
+                <img
+                  src="./assets/transactions.png"
+                  alt="transactions map"
+                  class="responsive"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="messages">
+            <div class="messages-header">
+              <div class="card-heading">Messages</div>
+              <div class="card-toolbar">
+                <i class="fa-solid fa-angle-up"></i>
+                <i class="fa-solid fa-wrench"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div id="messages-body" class="messages-body"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__copyright">&copy; 2023</div>
+        <div class="footer__signature">Adam Gertkzin</div>
+      </footer>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+      const access_token = localStorage.getItem('access_token')
+      const user_data = localStorage.getItem('user_data')
+      const user = JSON.parse(user_data)
+
+      console.log({ user })
+      if (!access_token) window.location.href = './index.html'
+    </script>
+  </body>
+</html>

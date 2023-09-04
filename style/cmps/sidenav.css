@@ -1,0 +1,82 @@
+.sidenav {
+  grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  overflow-y: auto;
+  transform: translateX(-245px);
+  transition: all 0.6s ease-in-out;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  background-color: var(--sidenav-bg-dark);
+}
+
+.sidenav.active {
+  transform: translateX(0);
+}
+
+.sidenav__list {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+}
+
+.sidenav__list-item {
+  margin-block-start: 15px;
+  padding-inline-start: 10px;
+  display: flex;
+  color: var(--sidenav-text-white);
+  font-size: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.sidenav-descriptor {
+  padding: 5px;
+  flex: 1;
+}
+
+.sidenav-descriptor span {
+  margin-inline-start: 8px;
+}
+
+.sidenav__list-item .badge,
+.list-caret {
+  margin-inline-end: 10px;
+}
+
+.sidenav__list-item:hover {
+  background-color: var(--success-clr);
+  color: var(--card-bg-white);
+  cursor: pointer;
+}
+
+.sidenav__user {
+  display: flex;
+  margin-top: 1.2rem;
+  margin-left: 0.8rem;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.sidenav__user .avatar {
+  background-image: url('https://res.cloudinary.com/dp2xkwxbk/image/upload/v1690384859/user_l7oxo0.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.sidenav__user .user-name {
+  color: var(--card-bg-white);
+  font-size: 0.9rem;
+}
+
+.sidenav__user .user-title {
+  color: var(--sidenav-text-white);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,26 @@
+:root {
+  --main-bg-white: #eceef0;
+
+  --card-bg-white: #ffffff;
+  --card-toolbar-clr: #c3c3c3;
+  --card-text-clr: #6c757d;
+  --card-text-weight: 300;
+  --card-text-size: 12px;
+
+  --sidenav-bg-dark: #2f4050;
+  --sidenav-text-white: #a9b0c0;
+
+  --sub-heading-clr: #63645d;
+  --sub-heading-size: 12px;
+  --sub-heading-weight: 700;
+
+  --table-border-clr: rgba(0, 0, 0, 0.05);
+
+  --footer-bg-dark: #2f4050;
+
+  --success-clr: #54b095;
+  --info-clr: #3f82c0;
+  --calm-clr: #5fc3c6;
+  --danger-clr: #db6068;
+  --alert-clr: #edaf68;
+}

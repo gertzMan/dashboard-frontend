@@ -1,0 +1,9 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: var(--footer-bg-dark);
+  color: var(--card-bg-white);
+}

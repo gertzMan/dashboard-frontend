@@ -1,0 +1,90 @@
+@media only screen and (min-width: 600px) {
+  :root {
+    --card-text-weight: 100;
+    --card-text-size: 13px;
+    --sub-heading-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .orders-overview-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modular-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .messages {
+    grid-column: 1/1;
+    grid-row: 1/-1;
+  }
+
+  .project-list {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    height: 60%;
+    overflow-y: scroll;
+  }
+
+  .todo-list {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    height: 60%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
+  .transactions {
+    grid-column: 2/-1;
+    grid-row: 2/2;
+    margin-top: -120px;
+    height: 90%;
+    overflow-y: scroll;
+  }
+  .transactions-body {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  .transactions-body .map-container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      'sidenav main'
+      'sidenav footer';
+  }
+
+  .sidenav {
+    position: relative;
+    transform: translateX(0);
+  }
+
+  .project-list {
+    height: auto;
+    overflow-x: none;
+  }
+
+  .todo-list {
+    height: auto;
+  }
+
+  .transactions {
+    margin-top: 20px;
+    height: auto;
+  }
+  .transactions-body {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}

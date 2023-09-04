@@ -1,0 +1,67 @@
+/* badges */
+.badge {
+  color: var(--card-bg-white);
+  font-size: 0.5rem;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-family: inherit;
+}
+.badge--success {
+  background-color: var(--success-clr);
+}
+
+.badge--calm {
+  background-color: var(--calm-clr);
+}
+.badge--info {
+  background-color: var(--info-clr);
+}
+
+.badge--alert {
+  background-color: var(--alert-clr);
+}
+
+.badge--danger {
+  background-color: #f44336;
+}
+.badge--other {
+  background-color: #e7e7e7;
+}
+/* end of badges */
+
+/* stat-indicators */
+.stats-indicator {
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+}
+
+.stats-indicator span {
+  margin-inline-end: 3px;
+}
+
+.stats-indicator.danger {
+  color: var(--danger-clr);
+}
+
+.stats-indicator.calm {
+  color: var(--calm-clr);
+}
+
+.stats-indicator.success {
+  color: var(--success-clr);
+}
+
+.stats-indicator.info {
+  color: var(--info-clr);
+}
+/* end of stat-indicators */
+
+/* miscellaneous */
+
+.timestamp {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
